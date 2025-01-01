@@ -12,6 +12,15 @@ import { LuMail } from "react-icons/lu";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaFacebookF, FaGooglePlusG, FaLinkedinIn, FaPinterest, FaTwitter } from "react-icons/fa"
 
+const images = [
+    { src: school1, alt: 'School 1' },
+    { src: school2, alt: 'School 2' },
+    { src: school3, alt: 'School 3' },
+    { src: school4, alt: 'School 4' },
+    { src: school5, alt: 'School 5' },
+    { src: school6, alt: 'School 6' },
+];
+
 const Footer = () => {
     return (
         <div className="bg-[#333333] p-4 md:pt-12 w-full pt-8">
@@ -42,17 +51,16 @@ const Footer = () => {
                 <div className="text-white ">
                     <h2 className="font-semibold text-2xl">Gallery</h2>
                     <div className="pt-5 grid grid-cols-3 gap-1.5">
-                        {/* {
-                            [1, 2, 3, 4, 5, 6].map((_, index) => (
-                                <Image width={100} height={100} src={`school${index + 1}`} alt="img" key={index} className="h-16 rounded-lg object-cover" />
+                        {
+                            images.map((image, index) => (
+                                <Image
+                                    key={index}
+                                    src={image.src}
+                                    alt={image.alt}
+                                    className="h-16 rounded-lg object-cover"
+                                />
                             ))
-                        } */}
-                        < Image src={school1} alt="img" className="h-16 rounded-lg object-cover" />
-                        <Image src={school2} alt="img" className="h-16 rounded-lg object-cover" />
-                        <Image src={school3} alt="img" className="h-16 rounded-lg object-cover" />
-                        <Image src={school4} alt="img" className="h-16 rounded-lg object-cover" />
-                        <Image src={school5} alt="img" className="h-16 rounded-lg object-cover" />
-                        <Image src={school6} alt="img" className="h-16 rounded-lg object-cover" />
+                        }
                     </div>
                 </div>
                 <div className="text-white lg:pl-5">
