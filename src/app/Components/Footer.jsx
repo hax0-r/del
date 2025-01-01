@@ -24,7 +24,7 @@ const images = [
 const Footer = () => {
     return (
         <div className="bg-[#333333] p-4 md:pt-12 w-full pt-8">
-            <div className="max-w-7xl w-full mx-auto grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-5">
+            <div className="max-w-7xl w-full mx-auto grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 md:gap-5 gap-7">
                 <div className="">
                     <Link href="/">
                         <Image src={logo} alt="logo" width={100} height={100} />
