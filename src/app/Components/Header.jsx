@@ -4,11 +4,11 @@ import Image from "next/image";
 import { IoIosArrowDown } from "react-icons/io";
 
 // Flag imports
-import us from '../../../public/Home/flags/us.svg';
-import de from '../../../public/Home/flags/de.svg';
-import es from '../../../public/Home/flags/es.svg';
-import fr from '../../../public/Home/flags/fr.svg';
-import it from '../../../public/Home/flags/it.svg';
+import us from '../../../public/Assets/Home/flags/us.svg';
+import de from '../../../public/Assets/Home/flags/de.svg';
+import es from '../../../public/Assets/Home/flags/es.svg';
+import fr from '../../../public/Assets/Home/flags/fr.svg';
+import it from '../../../public/Assets/Home/flags/it.svg';
 import { FaFacebookF, FaGooglePlusG, FaLinkedinIn, FaPinterest, FaTwitter } from "react-icons/fa";
 
 const Header = () => {
