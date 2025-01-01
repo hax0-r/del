@@ -111,3 +111,31 @@ export const wyChooseUs = [
         para: "We provide more affordable alternative to traditional three-year colleges."
     }
 ]
+
+export const FAQ_DATA = [
+    {
+        title: "What programs do you offer?",
+        description:
+            "We offer a variety of programs in fields such as IT, skilled trades, entrepreneurship, designed to prepare students for specific careers",
+    },
+    {
+        title: "How long do the programs take to complete",
+        description:
+            "Programs length vary, typically ranging from a few months, with maximum of three years, depending on the field of study",
+    },
+    {
+        title: "Are there financial aid options available?",
+        description:
+            "Yes, we offer financial aid options in which one of it inclueds loans to help students after graduation",
+    },
+    {
+        title: "what are the admission requirements?",
+        description:
+            "Admission requiremnts generally include J.S.S 3 examination certificate for the students willing to seat for NABTEB examination. The form fee is just 10,000 Naira",
+    },
+    {
+        title: "will there be job placement?",
+        description:
+            "Yes, there will be job placement",
+    },
+];
