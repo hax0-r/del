@@ -1,11 +1,9 @@
-import Nav from "../Component/Nav";
-import Navbar from "./Components/Navbar";
+import Header from "./Components/Header";
 
 export default function Home() {
   return (
     <div>
-      <Nav />
-      <Navbar />
+      <Header />
     </div>
   );
 }
