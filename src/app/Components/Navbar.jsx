@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Nav = () => {
+const Navbar = () => {
   return (
     <h1 className='text-center font-bold text-5xl min-h-screen flex items-center justify-center'>
-        Hello World (Outer Component)
-    </h1>
+    Hello World (Inner Component)
+</h1>
   )
 }
 
-export default Nav
+export default Navbar
