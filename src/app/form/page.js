@@ -47,8 +47,8 @@ const Form = () => {
                 <Label name="email" />
                 <Input type="email" name="email" />
 
-                <Label name="phone" />
-                <Input type="number" name="phone" />
+                <Label name="tel" />
+                <Input type="number" name="tel" />
 
                 <button className="hover:bg-[#0056b3] w-full mt-6 font-medium px-10 py-4 cursor-pointer transition-all duration-500 bg-[#007bff] text-white   rounded-lg ">Download and Submit</button>
             </form>
