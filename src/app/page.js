@@ -36,7 +36,9 @@ export default function Home() {
       <div className="md:pt-16 max-w-6xl w-full mx-auto p-4 pt-8 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 md:gap-14 ">
         {
           CARD_DATA.map((data, index) => (
-            <Card key={index} className={true} img={data.img} heading={data.heading} para={data.para} />
+            <div key={index}>
+              <Card className={true} image={data.img} cardHeader={data.heading} cardBody={data.para} />
+            </div>
           ))
         }
       </div>
@@ -94,7 +96,7 @@ export default function Home() {
       <div
         style={{ background: `linear-gradient(#0a364fc6,#0a364fc6),url(${faq.src}) center/cover fixed` }}
         className="bgContactSection md:pt-20 relative pt-8 w-full mt-10">
-          <div className="h-40 w-full absolute bg-white bottom-0 left-0"></div>
+        <div className="h-40 w-full absolute bg-white bottom-0 left-0"></div>
         <h2 className="font-bold text-[1.7rem] text-white md:text-[2.5rem] text-center md:pt-16 pt-12 ">Faq’s</h2>
         <div className="w-10 mt-2 h-1 rounded-full bg-zinc-300 mx-auto"></div>
         <p className="mt-6 text-zinc-300 text-center">
@@ -119,7 +121,7 @@ export default function Home() {
       <div className="md:pt-16 max-w-7xl w-full mx-auto p-4 pt-8 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 md:gap-14 ">
         {
           wyChooseUs.map((data, index) => (
-            <Card key={index} img={data.img} heading={data.heading} para={data.para} />
+            <Card key={index} image={data.img} cardHeader={data.heading} cardBody={data.para} />
           ))
         }
       </div>
