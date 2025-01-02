@@ -111,13 +111,13 @@ export default function Home() {
             {
               !video ? (
                 <>
-                  <Image src={faq} alt="img" className="w-full h-[22rem]" />
+                  <Image src={faq} alt="img" className="w-full h-[26rem]" />
                   <div onClick={() => setVideo(true)} className="w-16 h-16 cursor-pointer bg-white flex items-center justify-center rounded-full absolute">
                     <FaPlay className="" />
                   </div>
                 </>
               ) : (
-                <video onClick={() => setVideo(false)} autoPlay muted loop>
+                <video onClick={() => setVideo(false)} className="h-[26rem] bg-white object-cover" autoPlay muted loop>
                   <source src="/Assets/Home/video.mp4" type="video/mp4" />
                 </video>
               )
