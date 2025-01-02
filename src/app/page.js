@@ -1,3 +1,4 @@
+"use client";
 import { CARD_DATA, wyChooseUs } from "@/Data/Data";
 import Header from "./Components/Header";
 import Navbar from "./Components/Navbar";
@@ -12,8 +13,10 @@ import Accordion from "./Components/Faq";
 import Footer from "./Components/Footer";
 import Image from "next/image";
 import { FaPlay } from "react-icons/fa";
+import { useState } from "react";
 
 export default function Home() {
+  const [video, setVideo] = useState(false);
   return (
     <div>
       <Header />
@@ -104,10 +107,21 @@ export default function Home() {
           Here are the common FAQs</p>
         <div className="max-w-7xl w-full mx-auto md:mt-14 mt-8 grid md:grid-cols-2 z-10 relative grid-cols-1 px-4 justify-center">
           <div className="relative flex items-center justify-center">
-            <Image src={faq} alt="img" className="w-full " />
-            <div className="w-16 h-16 cursor-pointer bg-white flex items-center justify-center rounded-full absolute">
-            <FaPlay className="" />
-            </div>
+
+            {
+              !video ? (
+                <>
+                  <Image src={faq} alt="img" className="w-full " />
+                  <div onClick={() => setVideo(true)} className="w-16 h-16 cursor-pointer bg-white flex items-center justify-center rounded-full absolute">
+                    <FaPlay className="" />
+                  </div>
+                </>
+              ) : (
+                <video autoPlay muted loop>
+                  <source src="/Assets/Home/video.mp4" type="video/mp4" />
+                </video>
+              )
+            }
 
           </div>
           <div className=" bg-white h-full flex items-center justify-center">
