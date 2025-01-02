@@ -11,6 +11,7 @@ import SchoolView from "./Components/SchoolView";
 import Accordion from "./Components/Faq";
 import Footer from "./Components/Footer";
 import Image from "next/image";
+import { FaPlay } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -102,8 +103,12 @@ export default function Home() {
         <p className="mt-6 text-zinc-300 text-center">
           Here are the common FAQs</p>
         <div className="max-w-7xl w-full mx-auto md:mt-14 mt-8 grid md:grid-cols-2 z-10 relative grid-cols-1 px-4 justify-center">
-          <div className="">
+          <div className="relative flex items-center justify-center">
             <Image src={faq} alt="img" className="w-full " />
+            <div className="w-16 h-16 cursor-pointer bg-white flex items-center justify-center rounded-full absolute">
+            <FaPlay className="" />
+            </div>
+
           </div>
           <div className=" bg-white h-full flex items-center justify-center">
             <Accordion />
